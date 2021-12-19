@@ -1,10 +1,9 @@
-import { element } from "prop-types";
-import { useState } from "react";
-
+import { useCallback, useEffect, useState } from "react";
+console.log('test')
 const React = require("react");
 const ReactDOM = require("react-dom");
 
-ReactDOM.render(document.getElementById("root"), <Index />);
+ReactDOM.render( <Index />,document.getElementById("root"));
 
 export default function Index() {
   const [elementSelected, setElementSelected] = useState(null);
